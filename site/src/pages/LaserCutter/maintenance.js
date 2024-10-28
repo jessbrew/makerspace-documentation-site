@@ -1,5 +1,5 @@
 export default function Maintenance() {
     return (
-        <h1>Maintenance</h1>
+        <h3>Maintenance</h3>
     );
 }

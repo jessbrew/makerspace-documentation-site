@@ -1,5 +1,5 @@
 export default function General() {
     return (
-        <h1>Getting Started</h1>
+        <h3>Getting Started</h3>
     );
 }

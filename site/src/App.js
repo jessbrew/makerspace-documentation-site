@@ -9,6 +9,7 @@ import LaserGeneral from "./pages/LaserCutter/general";
 import LaserMaintenance from "./pages/LaserCutter/maintenance";
 import LaserSafety from "./pages/LaserCutter/safety";
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './css/main.css'
 
 export default function App() {
   return (
