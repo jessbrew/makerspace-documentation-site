@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="fab3a035-886b-36fb-b121-330cf7432bf3")}catch(e){}}();
+define(["exports","./c_file_viewer_common_share_helpers","./e_file_viewer_static_scl_page_folder","react","./c_core_i18n","./e_core_exception","./c_lodash","./c_src_sink_index","./c_pap-events_docsend_view_docsend_hub_entry_button","./c_api_v2_routes_password_confirmation_provider","metaserver/static/js/langpack","./e_edison","./c_api_v2_routes_folders_info_provider","./e_data_modules_stormcrow","./c_core_notify","react-dom","metaserver/static/js/modules/constants/viewer","./c_api_v2_routes_team_provider"],(function(e,_,o,r,t,s,c,a,i,n,d,p,v,f,l,m,u,h){"use strict";e.getDataForContentInfo=_.getDataForContentInfo,e.share=_.share}));
+//# sourceMappingURL=c_file_viewer_common_share_helpers.after-display.js-vflEgghGI.map
+
+//# debugId=fab3a035-886b-36fb-b121-330cf7432bf3

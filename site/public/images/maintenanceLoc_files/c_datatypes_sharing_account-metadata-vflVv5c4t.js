@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="6caf86ca-37a8-3028-931b-487dfa6632d8")}catch(e){}}();
+define(["exports","./e_file_viewer_static_scl_page_folder"],(function(e,i){"use strict";const m=e=>"personal"!==e.role&&!!e.is_team_member,a=(e,i)=>{var a;return m(e)&&e.team_id===(null===(a=i.owner_team)||void 0===a?void 0:a.id)};e.convertAccountMetadataToUser=e=>({id:e.user_id,email:e.email,is_team:m(e),is_team_admin:e.is_team_admin,account_id:e.account_id,team_dbtid:e.team_id,is_tmr_member:e.is_tmr_member}),e.getIsTeam=m,e.getIsTeamAdmin=e=>m(e)&&!!e.is_team_admin,e.isFreeUnpairedNonTeamUser=e=>Boolean(e&&!e.is_paid&&!e.is_paired&&!e.is_team_member),e.isUserOnSameTeamAsObject=a,e.isUserOnSameTeamAsTmrFolder=(e,t)=>(e=>m(e)&&!!e.is_tmr_member)(e)&&a(e,t)&&i.getIsTeamSharedFolder(t)}));
+//# sourceMappingURL=c_datatypes_sharing_account-metadata.js-vflmUJ4l9.map
+
+//# debugId=6caf86ca-37a8-3028-931b-487dfa6632d8

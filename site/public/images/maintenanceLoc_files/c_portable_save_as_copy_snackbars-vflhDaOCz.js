@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="cc3edf5f-8754-3938-9c57-59a028eb561b")}catch(e){}}();
+define(["exports","./c_core_i18n","./e_file_viewer_static_scl_page_folder","./e_core_exception","./c_lodash","./c_src_sink_index","./c_pap-events_docsend_view_docsend_hub_entry_button","./c_api_v2_routes_password_confirmation_provider","metaserver/static/js/langpack","react","./e_edison","./c_api_v2_routes_folders_info_provider","./e_data_modules_stormcrow","./c_core_notify","react-dom","metaserver/static/js/modules/constants/viewer","./c_api_v2_routes_team_provider"],(function(e,_,o,r,s,t,a,c,i,n,d,p,v,f,l,u,m){"use strict";e.saveCopySnackBarInProgress=e=>o.Snackbar.sync(_.intl.formatMessage({id:"Adz4fH",defaultMessage:"Saving to your personal Dropbox..."}),!1,e)}));
+//# sourceMappingURL=c_portable_save_as_copy_snackbars.js-vflleAjWe.map
+
+//# debugId=cc3edf5f-8754-3938-9c57-59a028eb561b

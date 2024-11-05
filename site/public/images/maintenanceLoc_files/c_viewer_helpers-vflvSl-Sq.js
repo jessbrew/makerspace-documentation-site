@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="30edf88f-5366-3aba-a2c0-d58d9564d66c")}catch(e){}}();
+define(["exports","./e_file_viewer_static_scl_page_folder"],(function(e,t){"use strict";function r(e,r,n){return function(e,r,n){return n===t.ROLE_WORK?r.team_name:r.is_paired?function(e){return e.formatMessage({id:"QPBzI3",defaultMessage:"Personal"})}(e):""}(e,r,n.role)}e.deprecatedGetRoleTitle=function(e,t,n){return r(e,t,n)},e.deprecatedGetRootName=function(e,t,n){return function(e,t,n){return r(e,t,n)||function(e){return e.formatMessage({id:"rIir19",defaultMessage:"Dropbox"})}(e)}(e,t,n)}}));
+//# sourceMappingURL=c_viewer_helpers.js-vfl16Fl8X.map
+
+//# debugId=30edf88f-5366-3aba-a2c0-d58d9564d66c

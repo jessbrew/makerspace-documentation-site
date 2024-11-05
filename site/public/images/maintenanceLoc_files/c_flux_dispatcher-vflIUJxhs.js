@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="3864ad63-db02-387a-8102-0a1d5cc3478a")}catch(e){}}();
+define(["exports","./c_flux_action_type","./c_api_v2_routes_folders_info_provider","./e_core_exception"],(function(t,e,n,i){"use strict";var r=e.Dispatcher_1;let s=null;const c=new class extends r{dispatch(t){n.assert(null!=t.type,"Invariant error: cannot dispatch action without 'type' property."),n.assert(null===s,`Invariant error: cannot dispatch ${t.type} while also dispatching ${s}.`),s=t.type;try{"function"==typeof this.dispatch_begin&&this.dispatch_begin();try{return super.dispatch({action:t})}catch(t){return i.reportException({err:t}),console.error(t)}finally{"function"==typeof this.dispatch_end&&this.dispatch_end()}}finally{s=null}}};t.dispatcherSingleton=c}));
+//# sourceMappingURL=c_flux_dispatcher.js-vflUgJnPu.map
+
+//# debugId=3864ad63-db02-387a-8102-0a1d5cc3478a

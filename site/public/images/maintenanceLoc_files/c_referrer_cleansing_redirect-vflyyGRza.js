@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="34bfbdbe-35ad-35d0-bb05-fc9aa21b04d3")}catch(e){}}();
+define(["exports","./e_file_viewer_static_scl_page_folder","./c_api_v2_routes_folders_info_provider","./c_security_csrf_hmac"],(function(e,t,r,c){"use strict";async function n(e){const t=r.URI.parse(e).getScheme();if(t&&!["http","https"].includes(t))return"#";const n=new r.URI({scheme:"https",authority:"www.dropbox.com",path:"/referrer_cleansing_redirect"}),i=await c.csrfHmacUrltoken(e);return n.setQuery({url:e,hmac:i}),n}async function i(e,r=window,c=!1){c&&(r.opener=null);const i=await n(e);t.redirect(i,r)}e.get_redirect_uri=n,e.redirect=i,e.safe_open_tab_and_redirect=function(e){i(e,t.unsafe_open_tab(""),!0)}}));
+//# sourceMappingURL=c_referrer_cleansing_redirect.js-vflgBXJJz.map
+
+//# debugId=34bfbdbe-35ad-35d0-bb05-fc9aa21b04d3

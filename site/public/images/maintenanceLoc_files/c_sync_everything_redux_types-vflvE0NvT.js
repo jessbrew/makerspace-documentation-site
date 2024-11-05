@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="3082ca4e-87b0-39e9-86e8-91000e00305c")}catch(e){}}();
+define(["exports","./e_file_viewer_static_scl_page_folder"],(function(S,_){"use strict";const U={backups:null,isBackupSearch:!1,isInsideBackup:!1,currentBackup:null,lastBackupTimes:_.immutableExports.Map(),stormcrows:null,userSKU:null,userQuota:null};var T;S.Actions=void 0,(T=S.Actions||(S.Actions={})).SET_BACKUPS="BACKUP/SET_BACKUPS",T.SET_CURRENT_BACKUP="BACKUPS/SET_CURRENT_BACKUP",T.SET_LAST_BACKUP_TIMES="BACKUP/UPDATE_LAST_BACKUP_TIMES",T.SET_STORMCROWS="BACKUP/SET_STORMCROWS",T.SET_USER_SKU="BACKUP/SET_USER_SKU",T.SET_USER_QUOTA="BACKUP/SET_USER_QUOTA",S.defaultBackupState=U}));
+//# sourceMappingURL=c_sync_everything_redux_types.js-vflqmICVD.map
+
+//# debugId=3082ca4e-87b0-39e9-86e8-91000e00305c

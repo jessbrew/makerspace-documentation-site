@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="91c886c0-6b42-3d87-a6cf-208d64be01b1")}catch(e){}}();
+define(["exports"],(function(i){"use strict";var E,n;i.ExpirationOption=void 0,(E=i.ExpirationOption||(i.ExpirationOption={}))[E.SEVEN_DAYS=7]="SEVEN_DAYS",E[E.THIRTY_DAYS=30]="THIRTY_DAYS",E[E.NINETY_DAYS=90]="NINETY_DAYS",E[E.CUSTOM=0]="CUSTOM",function(i){i.EXPIRED="expired",i.SHARED="shared"}(n||(n={}));var t;i.ExpirationOption.SEVEN_DAYS,i.ExpirationOption.SEVEN_DAYS,i.ExpirationOption.THIRTY_DAYS,function(i){i.WAITING="waiting",i.FAILED="failed",i.UPLOADING="uploading",i.COMPLETED="completed"}(t||(t={})),i.BYTES_IN_GIGABYTE=1073741824,i.BYTES_IN_MEGABYTE=1048576}));
+//# sourceMappingURL=c_src_common_constants.js-vflGv0BNG.map
+
+//# debugId=91c886c0-6b42-3d87-a6cf-208d64be01b1
