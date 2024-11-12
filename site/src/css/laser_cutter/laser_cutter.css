@@ -1,0 +1,7 @@
+.general, .safety, .maintenance {
+    padding: 20px 40px 50px 40px;
+}
+
+.general h1, .safety h1, .maintenance h1 {
+    text-align: center;
+}
