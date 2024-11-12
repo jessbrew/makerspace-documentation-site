@@ -24,7 +24,7 @@ export default function App() {
           <Route path="/lasermaintenance" element={<LaserMaintenance/>}/>
           <Route path="/lasersafety" element={<LaserSafety/>}/>
         </Routes>
-    <Navbar fixed="top" expand="lg">
+    <Navbar fixed="top" expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand as={Link} to="/home">Makerspace Project</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
