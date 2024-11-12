@@ -1,6 +1,7 @@
 import React from "react";
-import { Container, Image, Row, Col, Button } from 'react-bootstrap';
+import { Container, Image, Row, Col, Button, Card } from 'react-bootstrap';
 import { AiOutlineTrademark } from "react-icons/ai";
+import '../../css/3dprinting/3dprinting.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 //Go thru and change all the text align centers to the class {text-center}
@@ -21,12 +22,12 @@ export default function softwaresetup() {
                     <Row className="mt-3"> 
                         <Col xs={6} style={{textAlign: 'center'}}> {/* Set each button to take half the width on small screens */}
                             <a href="https://github.com/Ultimaker/Cura/releases/download/5.8.1/UltiMaker-Cura-5.8.1-macos-X64.dmg">
-                                <Button className="w-50">Mac OS</Button> 
+                                <Button className="button-style">Mac OS</Button> 
                             </a>
                         </Col>
                         <Col xs={6} style={{textAlign: 'center'}}> {/* Set each button to take half the width on small screens */}
                             <a href="https://github.com/Ultimaker/Cura/releases/download/5.8.1/UltiMaker-Cura-5.8.1-win64-X64.exe">
-                                <Button className="w-50">Windows</Button> 
+                                <Button className="button-style">Windows</Button> 
                             </a>
                         </Col>
                     </Row>
@@ -36,24 +37,114 @@ export default function softwaresetup() {
         <Container>
             <Row>
                 <Col>
-                <h1 className="display-5" style={{ textAlign: 'center'}}>Setting up the Software</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ligula dui, venenatis eget tellus et, volutpat faucibus elit. Nam eu finibus dolor, a gravida enim. Nulla at dictum nulla, nec auctor eros. Aliquam tristique facilisis dui, vitae fermentum dolor eleifend sed. Phasellus dignissim augue feugiat, fermentum justo at, dapibus urna. Nam sem quam, sodales nec faucibus nec, sagittis id lectus. Proin in porttitor tellus, nec tincidunt lectus. Maecenas dignissim enim eu egestas accumsan.</p>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                <h1 className="display-5" style={{ textAlign: 'center'}}>Understanding the Printer</h1>
-                <p>Suspendisse cursus, turpis nec efficitur vestibulum, libero mauris euismod sapien, at facilisis tellus arcu a nulla. Aliquam efficitur mauris feugiat est semper, ut placerat enim pulvinar. Phasellus molestie hendrerit porta. Phasellus nulla nulla, euismod eu ultrices non, interdum ac turpis. Sed eu lacus eu purus consectetur bibendum vitae et nisi. Curabitur convallis eu turpis nec consectetur. Donec scelerisque aliquet imperdiet. Nunc suscipit auctor felis non euismod.</p>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
-                <h1 className="display-5" style={{ textAlign: 'center'}}>Setting up an Account</h1>
-                <p>Suspendisse cursus, turpis nec efficitur vestibulum, libero mauris euismod sapien, at facilisis tellus arcu a nulla. Aliquam efficitur mauris feugiat est semper, ut placerat enim pulvinar. Phasellus molestie hendrerit porta. Phasellus nulla nulla, euismod eu ultrices non, interdum ac turpis. Sed eu lacus eu purus consectetur bibendum vitae et nisi. Curabitur convallis eu turpis nec consectetur. Donec scelerisque aliquet imperdiet. Nunc suscipit auctor felis non euismod.</p>
+                <h1 className="display-5" style={{ textAlign: 'center', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.1)'}}>Setting up the Software</h1>
                 </Col>
             </Row>
 
+            <Row className="text-center">
+                <Col md={4}>
+                    <Card className="cardHover" style={{ backgroundColor: '#d3d3d3', padding: '20px' }}>
+                    <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <li style={{fontSize: '1.8em'}}>Sign In to Cura</li>
+                        <li style={{ listStyleType: 'disc' }}>Open Cura and click the "Sign In" button in the top-right corner.</li>
+                        <li style={{ listStyleType: 'disc' }}>Sign in with your Ultimaker account. (Do not click any other options in the pop-up window.)</li>
+                    </ul>
+                    </Card>
+                </Col>
+                <Col md={4}>
+                <Card className="cardHover" style={{ backgroundColor: '#d3d3d3', padding: '20px' }}>
+                <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <li style={{fontSize: '1.8em'}}>Access the Marketplace</li>
+                        <li style={{ listStyleType: 'disc' }}>After signing in, click the "Marketplace" button in the top-right corner of Cura.</li>
+                        <li style={{ listStyleType: 'disc' }}>In the pop-up window, find the "Settings Guide" plugin by Ghostkeeper and click "Install." This plugin provides helpful explanations for settings.</li>
 
+                    </ul>
+                </Card>
+                </Col>
+                <Col md={4}>
+                <Card className="cardHover" style={{ backgroundColor: '#d3d3d3', padding: '20px' }}>
+                <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <li style={{fontSize: '1.8em'}}>Add Filament Prices</li>
+                        <li style={{ listStyleType: 'disc' }}>Click the "Settings" button in the upper left corner of Cura and navigate to Extruder 1 Materials {'>'} Manage Materials.</li>
+                        <li style={{ listStyleType: 'disc' }}>Refer to the materials list in the Makerspace to enter the prices. For example, Ultimaker Tough PLA Black is $50 per spool, and PolyTerra is $21 per spool.</li>
+                    </ul>
+                </Card>
+                </Col>
+            </Row>                
+            <Row>
+                <Col>
+                <h1 className="display-5" style={{ textAlign: 'center', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.1)' }}>Understanding the Printer</h1>
+                </Col>
+            </Row>
+            <Row className="text-center">
+                <Col md={4}>
+                <Card className="cardHover" style={{ backgroundColor: '#d3d3d3', padding: '20px' }}>
+                    <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <li style={{fontSize: '1.8em'}}>The Ultimaker S3 and S5</li>
+                        <li style={{ listStyleType: 'disc' }}>Ultimaker S3: A smaller cube-shaped printer with a single door that opens to the left and a screen displaying printer status, maintenance info, and print details.                        </li>
+                        <li style={{ listStyleType: 'disc' }}>Ultimaker S5: A taller version with two doors that open outward. It also includes a material station that allows for more color options (to be discussed later).                        </li>
+                    </ul>
+                </Card>
+                </Col>
+                <Col md={4}>
+                <Card className="cardHover" style={{ backgroundColor: '#d3d3d3', padding: '20px' }}>
+                    <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <li style={{fontSize: '1.8em'}}>External Components</li>
+                        <li style={{ listStyleType: 'disc' }}>Front Panel: Both the S3 and S5 have a front screen that displays essential information.</li>
+                        <li style={{ listStyleType: 'disc' }}>Material Station (for S5): A separate station for storing and managing more filament color options.</li>
+                    </ul>
+                </Card>
+                </Col>
+                <Col md={4}>
+                <Card className="cardHover" style={{ backgroundColor: '#d3d3d3', padding: '20px' }}>
+                    <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <li style={{fontSize: '1.8em'}}>Internal Components</li>
+                        <li style={{ listStyleType: 'disc' }}>Build Plate: A heated glass surface where the 3D prints are built. It provides the Z-axis movement.</li>
+                        <li style={{ listStyleType: 'disc' }}>Printer Head: This part receives filament from the feeder boxes and houses two print cores that heat up to extrude filament onto the build plate. It moves along axles to perform X and Y-axis movements.
+                        </li>
+                    </ul>
+                </Card>
+                </Col>
+            </Row>                
+
+
+            <Row>
+                <Col>
+                <h1 className="display-5" style={{ textAlign: 'center', fontWeight: 'bold', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.1)'}}>Setting up an Account</h1>
+                </Col>
+            </Row>
+            <Row className="text-center">
+                <Col md={4}>
+                <Card className="cardHover" style={{ backgroundColor: '#d3d3d3', padding: '20px' }}>
+                    <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <li style={{fontSize: '1.8em'}}>Accessing the 3D Printer</li>
+                        <li style={{ listStyleType: 'disc' }}>Contact the Right Person: Reach out to Professor Brewster (or Dr. Brown if Brewster is unavailable) to be added to the 3D printer network.                        </li>
+                        <li style={{ listStyleType: 'disc' }}>Follow the Link: In the email you receive, click on the provided link to begin creating your Ultimaker account.</li>
+                    </ul>
+                </Card>
+                </Col>
+                <Col md={4}>
+                <Card className="cardHover" style={{ backgroundColor: '#d3d3d3', padding: '20px' }}>
+                    <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <li style={{fontSize: '1.8em'}}>Creating Your Ultimaker Account</li>
+                        <li style={{ listStyleType: 'disc' }}>Select the Printer Option: Choose to create an account for an Ultimaker printer (this option is underlined in red).</li>
+                        <li style={{ listStyleType: 'disc' }}>Enter Your Information: Use the email from the link and create a memorable password.</li>
+                        <li style={{ listStyleType: 'disc' }}>Select Printing Preferences: Check the top 3 boxes for your 3D printing needs, but note that these don't impact printer usage.</li>
+                    </ul>
+                </Card>
+                </Col>
+                <Col md={4}>
+                <Card className="cardHover" style={{ backgroundColor: '#d3d3d3', padding: '20px' }}>
+                    <ul style={{ listStyleType: 'none', padding: 0 }}>
+                        <li style={{fontSize: '1.8em'}}>Verifying Your Account</li>
+                        <li style={{ listStyleType: 'disc' }}>Email Verification: Go to your inbox and click the link to verify your account.</li>
+                        <li style={{ listStyleType: 'disc' }}>Activate Your Account: Click the “Activate Account” button to complete the process.</li>
+                        <li style={{ listStyleType: 'disc' }}>Sign In: After activation, sign in to your Ultimaker Digital Factory account, and you’ll be directed to the WLC workspace homepage.
+                        </li>
+                    </ul>
+                </Card>
+                </Col>
+            </Row>                
         </Container>
         </>
     );
