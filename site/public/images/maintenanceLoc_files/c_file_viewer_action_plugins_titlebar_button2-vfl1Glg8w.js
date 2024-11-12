@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="5250f4cb-faff-3e91-bfb6-2652c1cf42a2")}catch(e){}}();
+define(["exports","./e_file_viewer_static_scl_page_folder"],(function(t,i){"use strict";i.injectInternalStyle("/static/metaserver/static/js/file_viewer/action_plugins/titlebar_button.module.out-vflqh5E5W.css",(t=>"._icon-button_1xcdf_1{line-height:normal;padding:0 var(--dig-spacing__micro__small)}._button-container_1xcdf_6{display:inline-block;position:relative}._notification-button-dot_1xcdf_11{position:absolute;right:4px;top:4px}"));t.buttonContainer="_button-container_1xcdf_6",t.iconButton="_icon-button_1xcdf_1",t.notificationButtonDot="_notification-button-dot_1xcdf_11"}));
+//# sourceMappingURL=c_file_viewer_action_plugins_titlebar_button2.js-vflH01fLw.map
+
+//# debugId=5250f4cb-faff-3e91-bfb6-2652c1cf42a2

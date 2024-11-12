@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="389013a3-46d5-3b85-8093-4ccdea9c10a4")}catch(e){}}();
+define(["exports","./e_file_viewer_static_scl_page_folder","./c_pnm_utils","./c_browse_models","./c_onboarding_survey_lib_oa_pulsar_campaigns"],(function(e,a,_,i,n){"use strict";a.NameSpaceAccess.ACCESS_NO_ACCESS,a.NameSpaceAccess.ACCESS_READER,a.NameSpaceAccess.ACCESS_READER_NO_COMMENT,e.getFilename=e=>"fq_path"in e||(e=>e instanceof i.File)(e)?_.hasValidLinkNode(e.per_node_metadata)||_.shouldHideExtension(e.per_node_metadata)?a.filename_without_extension(a.filename(e.fq_path)):e.legacyPaperName?e.legacyPaperName:a.filename(e.fq_path?e.fq_path:e.ns_path):e.filename}));
+//# sourceMappingURL=c_files_view_util.js-vflhfIxO1.map
+
+//# debugId=389013a3-46d5-3b85-8093-4ccdea9c10a4

@@ -1,0 +1,16 @@
+.general {
+    padding: 20px;
+    background-color: rgb(213, 213, 213);
+}
+
+.general ol {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 5px 5px 32px;
+    margin: 10px 30px;
+}
+
+.general img {
+    width: 400px;
+    padding: 5px 20px 5px 0;
+}

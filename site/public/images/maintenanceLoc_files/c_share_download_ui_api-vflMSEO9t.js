@@ -1,0 +1,5 @@
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="64db5380-7770-3736-bfae-dfa559ed9e0a")}catch(e){}}();
+define(["exports","./c_api_v2_routes_password_confirmation_provider","./e_file_viewer_static_scl_page_folder"],(function(t,e,r){"use strict";t.fetchDownloadUrl=function(t){const{sharedLinkUrl:a,rlkey:_,origin:i,userId:l,targetObjectMetadata:o}=t,d=l||e.getActiveUserId();return r.defaultEmitter.select(r.ON_FETCH_DOWNLOAD_URL_API_START).emit({targetObjectMetadata:o,downloadUrl:a}),r.SilentBackgroundRequest({url:r.GetUrlForFetchUserContentLink(),data:{url:a,rlkey:_,origin:i},subject_user:d}).then((t=>(r.defaultEmitter.select(r.ON_FETCH_DOWNLOAD_URL_API_SUCCESS).emit({targetObjectMetadata:o,downloadUrl:a}),t)),(t=>{throw r.defaultEmitter.select(r.ON_FETCH_DOWNLOAD_URL_API_FAILED).emit({targetObjectMetadata:o,downloadUrl:a}),t}))}}));
+//# sourceMappingURL=c_share_download_ui_api.js-vflYe9_4e.map
+
+//# debugId=64db5380-7770-3736-bfae-dfa559ed9e0a
