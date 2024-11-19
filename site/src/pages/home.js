@@ -7,7 +7,7 @@ export default function home() {
         <>
         <Container>
             <Row className="p-2">
-                <Col className="caresol mb-3">
+                <Col className="caresol mb-3 mt-3">
                     <h1 className="display-5 text-center">for the caresol</h1>
                 </Col>
             </Row>
