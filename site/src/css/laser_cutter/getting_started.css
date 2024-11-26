@@ -3,3 +3,8 @@
     margin: 5px 20px 5px 0;
     border-radius: 10px;
 }
+
+.general li {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
