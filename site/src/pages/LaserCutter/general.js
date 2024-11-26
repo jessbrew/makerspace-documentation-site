@@ -12,76 +12,69 @@ export default function General() {
 
 function Steps() {
     return (
-        <ol>
-            <li>
-                Sign-in to the desktop located next to the Laser cutter, just like any other school computer on campus, and locate the Adobe illustrator file on your profile. An easy way to find it is to hit the windows key and start typing out the name
-            </li>
-            <li>
-                Create a login by clicking the blue create account link in the middle of the page
-            </li>
-            <li>
-                Next fill out the first page of the create account screen. I would recommend using your school email for this. After that fill out page two, don't feel like you have to give them a real birthdate
-            </li>
-            <Image src="images/laser_cutter/getting_started/createAccount1.jpg"></Image>
-            <Image src="images/laser_cutter/getting_started/createAccount2.jpg"></Image>
-            <li>
-                Once in Illustrator, start a new window set to the custom size of 24"x18". Open the file that you wish to etch or cut with the laser
-            </li>
-            <ul>
-                <li>
-                    If the desire is to etch something the color of the outline can be any color except for red. If you want to cut instead of etch use red outlines
-                </li>
-                <li>
-                    When cutting the width of the red outline must be 0.0001" or 0.0072 px in width
-                </li>
-                <li>
-                    When etching the laser cutter will cut deeper the darker the internal fill of an item is, and shallower for lighter internal fill
-                </li>
-                <Image src="images/laser_cutter/getting_started/Illustrator1.jpg"></Image>
-                <Image src="images/laser_cutter/getting_started/Illustrator2.jpg"></Image>
-                <Image src="images/laser_cutter/getting_started/Illustrator3.jpg"></Image>
-                <li>
-                    If the basic blank screen on Illustrator doesn't have the grid shown like this example does, you can go to the top menu, click the "view" dropdown menu. Scroll down towards the bottom where it says "Show Grid"
-                </li>
-                <Image src="images/laser_cutter/getting_started/Showgrid.jpg"></Image>
-            </ul>
-            <li>
-                Once you have achieved the desired object to etch or cut out, hit control+p to bring up the print menu and send the print to the laser cutter "VLS4.60/75" is the name of the laser cutter. Click the setup button in the lower left corner of the pop-up.
-            </li>
-            <Image src="images/laser_cutter/getting_started/PrintSetup.jpg"></Image>
-            <ul>
-                <li>
-                    This brings up a Windows pop-up that you click the preferences button
-                </li>
-            </ul>
-            <Image src="images/laser_cutter/getting_started/PrintSetup2.jpg"></Image>
-            <ul>
-                <li>
-                    The next screen is the laser cutter setup screen. Select the material in the left text field (there are many options, take some time to see them all), and enter the material thickness in the lower left-hand corner. To check the material thickness there is a caliper located on the shelf in a blue box. Once you have selected the material and entered the thickness click the "apply" button and then the "Ok" button. Next click the "print" button on the two other windows
-                </li>
-            </ul>
-            <Image src="images/laser_cutter/getting_started/MaterialSelection.jpg"></Image>
-            <li>
-                Next hit the windows key and type in "UCP. open the program that comes up and it will show how your "printed" object looks for the laser cutter itself
-            </li>
-            <Image src="images/laser_cutter/getting_started/FindUCP.jpg"></Image>
-            <Image src="images/laser_cutter/getting_started/UCPBasicScreen.jpg"></Image>
-            <li>
-                From here you will utilize the big box on the right to align the image/s that you are going to cut/etch to where you want them on the material you will be using. See images below for step by step picture guides
-            </li>
-            <ul>
-                <li>
-                    First the basics of the UCP right hand column. First we have the red software power button for the laser cutter in the upper right corner. Next the large green button you see is the start button, for when you have a print fully mocked up and ready to print. Next you have the pause button to halt the printer if there is an issue(print will restart from the beginning, not from where it was paused). Finally there are the direction buttons to control the cutting head and the bed height
-                </li>
-                <Image src="images/laser_cutter/getting_started/Ucprightcolumn1.jpg"></Image>
-                <li>
-                    Next we will discuss the lower bars of the right column. First there is the "Home xy" and "Home z" buttons. Those are used to send the cutting head and internal table back to their home levels
-                </li>
-                <Image src="images/laser_cutter/getting_started/UCPTab1.jpg"></Image>
-                <Image src="images/laser_cutter/getting_started/UCPTab2.jpg"></Image>
-                <Image src="images/laser_cutter/getting_started/UCPTab3.jpg"></Image>
-                <Image src="images/laser_cutter/getting_started/UCPTab4.jpg"></Image>
-            </ul>
-        </ol>
+        <div>
+
+            <h1>General</h1>
+            <ol>
+                {/* 1 */}
+                <li><em><b><u>Talk to professor Brewster about getting trained on the use of the laser cutter, and set up a date that works</u></b></em></li>
+                
+                {/* 2 */}
+                <li>Sign into the computer next to the laser cutter and open Adobe Illustrator file</li>
+                <ul>
+                    <li>Make a blank file with the dimensions of 24" by 18"</li>
+                    <li>For everything that you want the laser to cut all the way through, use a pure red <em>(rgb(255, 0, 0))</em> line that is 0.072px</li>
+                    <li>Everything else other than 0.072px red line will be engraved. Darker black shapes will be engraved deeper than lighter gray color shapes</li>
+                </ul>
+
+                {/* 3 */}
+                <li>Once you have the file you want to engrave/cut open, hit <b>control P</b>, which will bring up a print menu</li>
+                <ul>
+                    <li><em>VLS4.60/75</em> is the name of the laser cutter, so it should be the printer selected</li>
+                    <li>Click the <em>"Setup"</em> button in the lower left corner, then click the <em>"Preferences"</em> button</li>
+                </ul>
+
+                {/* 4 */}
+                <li>Enter information on the material to be cut</li>
+                <ul>
+                    <li>Select the material in the left text field (e.g., soft wood)</li>
+                    <li>Enter the material thickness in the lower left-hand corner</li>
+                    <ul>
+                        <li>Use the calipers located in a blue box on a shelf to the right to measure the thickness</li>
+                    </ul>
+                    <li>The fixture type should be set to <em>"None"</em> and not <em>"Rotary"</em> (unless you are using the rotary)</li>
+                    <li>After entering this info, click the <em>"Apply"</em> button and then the <em>"Ok"</em> button, then click <em>"Print"</em> x2</li>
+                </ul>
+
+                {/* 5 */}
+                <li>Open the laser cutter lid and place material inside (keeping the lid open)</li>
+
+                {/* 6 */}
+                <li>Adjust the height of the bed of the laser cutter using the focus tool</li>
+                <ul>
+                    <li>Use the arrow buttons on the laser cutter to move it up and down</li>
+                    <li>Put the focus tool back in its spot, making sure that it sits flush</li>
+                </ul>
+
+                {/* 7 */}
+                <li>Open the UCP app & position image</li>
+                <ul>
+                    <li>Clicking anywhere moves the laser to that spot, so you can see where the image lines up on the material</li>
+                    <li>Make sure that the image isn't going off any edges of the material, and move it around if so</li>
+                    <ul>
+                        <li>One trick is to click around to put the laser in a good spot for the top corner of the image to be on the material, then use the "to pointer" button to move the image there</li>
+                    </ul>
+                </ul>
+
+                {/* 8 */}
+                <li>Close the lid & click play to start cutting</li>
+
+                {/* 9 */}
+                <li>When done using the laser cutter, close the lid and turn it off</li>
+                <ul>
+                    <li>Either hold the button on the laser cutter, or click the power button in UCP</li>
+                </ul>
+            </ol>
+        </div>
     );
 }
