@@ -27,10 +27,10 @@ export default function home() {
                     <Card className="card-hover mb-3">
                         <Card.Img variant="top" src="/images/ultimaker.jpg" />
                             <Card.Body>
-                                <Card.Title>3D Printer</Card.Title>
-                                <Card.Text>Info about our 3d Printers</Card.Text>
+                                <Card.Title className="text-center" style={{fontSize: '1.5em'}}>3D Printer</Card.Title>
+                                <Card.Text></Card.Text>
                                 <div className="accordion-content">
-                                    <p>Additional details about the 3D printer -- possibly link</p>
+                                    <p>Here in the Makerspace we carry the Ultimaker S line printers. </p>
                                 </div>
                             </Card.Body>
                     </Card>
@@ -39,8 +39,8 @@ export default function home() {
                     <Card className="card-hover mb-3">
                         <Card.Img variant="top" src="/images/ultimaker.jpg" />
                             <Card.Body>
-                                <Card.Title>Something</Card.Title>
-                                <Card.Text>Info</Card.Text>
+                            <Card.Title className="text-center" style={{fontSize: '1.5em'}}>Something</Card.Title>
+                            <Card.Text></Card.Text>
                                 <div className="accordion-content">
                                     <p>.........</p>
                                 </div>
@@ -51,8 +51,8 @@ export default function home() {
                     <Card className="card-hover mb-3">
                         <Card.Img variant="top" src="/images/ultimaker.jpg" />
                             <Card.Body>
-                                <Card.Title>Lazer Cutter</Card.Title>
-                                <Card.Text>Info about our Lazer Cutters</Card.Text>
+                            <Card.Title className="text-center" style={{fontSize: '1.5em'}}>Lazer Cutter</Card.Title>
+                            <Card.Text></Card.Text>
                                 <div className="accordion-content">
                                     <p>Additional details about the Lazer Cutters -- possibly link</p>
                                 </div>

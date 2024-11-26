@@ -10,6 +10,7 @@ import LaserMaintenance from "./pages/LaserCutter/maintenance";
 import LaserSafety from "./pages/LaserCutter/safety";
 import Footer from "./components/footer"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './'
 import './css/main.css'
 
 export default function App() {
@@ -48,7 +49,6 @@ export default function App() {
     </Navbar>
     <Footer></Footer>
   </BrowserRouter>
-
     </>
   );
 }

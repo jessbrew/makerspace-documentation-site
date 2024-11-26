@@ -4,6 +4,13 @@
     box-shadow: 0 4px 12px rgb(17, 13, 13);;
 }
 
+.accordhover:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+
+}
+
+
 .button-style {
     width: 100%;
     background-color: #007bff;
