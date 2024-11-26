@@ -2,7 +2,6 @@ import React from "react";
 import {Navbar, Nav, NavDropdown, Container} from "react-bootstrap"
 import { Link, BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './pages/home'
-import Safety3D from "./pages/3dPrinting/safety";
 import Maintenance3D from "./pages/3dPrinting/maintenance";
 import Software3D from "./pages/3dPrinting/software";
 import LaserGeneral from "./pages/LaserCutter/general";
@@ -21,7 +20,6 @@ export default function App() {
           <Route path="/home" element={<Home/>}/>
           <Route path="/3dsoftware" element={<Software3D/>}/>
           <Route path="/3dmaintenance" element={<Maintenance3D/>}/>
-          <Route path="/3dsafety" element={<Safety3D/>}/>
           <Route path="/lasergeneral" element={<LaserGeneral/>}/>
           <Route path="/lasermaintenance" element={<LaserMaintenance/>}/>
           <Route path="/lasersafety" element={<LaserSafety/>}/>
@@ -36,7 +34,6 @@ export default function App() {
             <NavDropdown title='3D Printing'>
               <NavDropdown.Item as={Link} to="/3dsoftware">Software Setup</NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/3dmaintenance">Printer Maintenance</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/3dsafety">Safety</NavDropdown.Item>
             </NavDropdown>
             <NavDropdown title="Laser Cutter">
               <NavDropdown.Item as={Link} to="/lasergeneral">Getting Started</NavDropdown.Item>
