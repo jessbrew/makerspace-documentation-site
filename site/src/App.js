@@ -8,7 +8,9 @@ import Software3D from "./pages/3dPrinting/software";
 import LaserGeneral from "./pages/LaserCutter/general";
 import LaserMaintenance from "./pages/LaserCutter/maintenance";
 import LaserSafety from "./pages/LaserCutter/safety";
+import Footer from "./components/footer"
 import 'bootstrap/dist/css/bootstrap.min.css'
+import './'
 import './css/main.css'
 
 export default function App() {
@@ -24,9 +26,9 @@ export default function App() {
           <Route path="/lasermaintenance" element={<LaserMaintenance/>}/>
           <Route path="/lasersafety" element={<LaserSafety/>}/>
         </Routes>
-    <Navbar fixed="top" expand="lg" className="bg-body-tertiary">
+    <Navbar fixed="top" expand="lg" className="bg-body-tertiary" style={{fontSize: '1.1em'}}>
       <Container>
-        <Navbar.Brand as={Link} to="/home">Makerspace Project</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/home" style={{fontSize: '1.5em'}}>Makerspace Documentation</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav>
@@ -45,8 +47,8 @@ export default function App() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    <Footer></Footer>
   </BrowserRouter>
-
     </>
   );
 }

@@ -4,6 +4,13 @@
     box-shadow: 0 4px 12px rgb(17, 13, 13);;
 }
 
+.accordhover:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+
+}
+
+
 .button-style {
     width: 100%;
     background-color: #007bff;
@@ -21,4 +28,20 @@
     transition: transform 0.3s ease;
   }
   
+
+.caresol {
+  border: 2px black;
+  border-style: solid;
+}
   
+.accordion-content {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+.card-hover:hover .accordion-content {
+  max-height: 100px;
+  opacity: 1;
+}
