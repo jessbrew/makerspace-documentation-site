@@ -8,7 +8,7 @@ export default function maintenance() {
     return (
         <>
         <Container>
-            <h1 className="display-5 text-center" > Printer Maintenance</h1>
+            <h1 className="display-5 text-center mt-2" > Printer Maintenance</h1>
             <Row>
                 <Col md={6}>
                 <Accordion className="mb-2 accordhover">
