@@ -10,6 +10,9 @@
 
 }
 
+image {
+  border: 2px solid black;
+}
 
 .button-style {
     width: 100%;
@@ -42,6 +45,29 @@
 }
 
 .card-hover:hover .accordion-content {
-  max-height: 100px;
+  max-height: 200px;
   opacity: 1;
+}
+
+.middleImg {
+  max-width: 100%;
+}
+
+
+@media (min-width: 768px) { 
+  .mt-custom {
+    margin-top: 250px;
+  }
+} 
+@media (min-width: 992px) { 
+  .mt-custom {
+    margin-top: 250px;
+  }
+} 
+
+@media (min-width: 992px) {
+  .cardHover {
+    height: 100%;
+  }
+  
 }

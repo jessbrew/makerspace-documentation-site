@@ -5,6 +5,32 @@
     padding: 0;
 }
   
-body {
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
     padding-top: 56px; /* so not overlapping header */
-}
+    flex-direction: column;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  footer {
+    background-color: #343a40; 
+    color: #fff;
+    text-align: left;
+    padding: 1rem;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+  }
+  

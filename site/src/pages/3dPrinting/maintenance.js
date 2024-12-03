@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Accordion } from "react-bootstrap";
+import { Col, Container, Row, Accordion, Image} from "react-bootstrap";
 import '../../css/3dprinting/3dprinting.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -8,7 +8,7 @@ export default function maintenance() {
     return (
         <>
         <Container>
-            <h1 className="display-5 text-center" > Printer Maintenance</h1>
+            <h1 className="display-5 text-center mt-2" > Printer Maintenance</h1>
             <Row>
                 <Col md={6}>
                 <Accordion className="mb-2 accordhover">
@@ -80,12 +80,25 @@ export default function maintenance() {
             </Row>
         </Container>
 
-
-
         <div className="p-4">
             <h1 className="text-center"><strong>Why is Maintenance Important?</strong></h1>
             <p><b>Printer maintenance</b> is essential to ensure consistent print quality, prolong the printer’s lifespan, and prevent costly repairs. Regular maintenance helps avoid issues such as clogged nozzles, uneven extrusion, or bed adhesion problems, which can compromise the accuracy and reliability of your prints. Cleaning the print head, lubricating the axes, and checking for firmware updates ensure that your printer operates smoothly and efficiently. Moreover, proper upkeep reduces the risk of unexpected downtime, keeping your projects on schedule. By dedicating time to maintenance, you maximize the performance and value of your Ultimaker printer.</p>
         </div>
+            <Container>
+                <Row>
+                    <Col md={4}>
+                    <Image className="image" src="/images/ultimaker.jpg" fluid></Image>
+                    </Col>
+                    <Col md={4}>
+                    <Image className="middleImg" src="/images/ultimaker.jpg" fluid></Image>
+                    </Col>
+                    <Col md={4}>
+                    <Image src="/images/ultimaker.jpg" fluid></Image>
+                    </Col>
+
+
+                </Row>
+            </Container>
         </>
     )
 }
