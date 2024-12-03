@@ -5,6 +5,9 @@
 }
 
 .general li {
-    font-size: 20px;
     margin-bottom: 5px;
+}
+
+Accordion {
+    font-size: 50px;
 }
