@@ -10,6 +10,10 @@
 
 }
 
+image {
+  border: 2px solid black;
+}
+
 .button-style {
     width: 100%;
     background-color: #007bff;
@@ -43,6 +47,10 @@
 .card-hover:hover .accordion-content {
   max-height: 200px;
   opacity: 1;
+}
+
+.middleImg {
+  max-width: 100%;
 }
 
 
