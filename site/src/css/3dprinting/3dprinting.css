@@ -33,8 +33,9 @@ image {
   
 
 .caresol {
-  border: 2px black;
+  border: 6px black;
   border-style: solid;
+  
 }
   
 .accordion-content {
