@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row, Accordion, Image} from "react-bootstrap";
+import { Col, Container, Row, Accordion, Carousel} from "react-bootstrap";
 import '../../css/3dprinting/3dprinting.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -86,17 +86,38 @@ export default function maintenance() {
         </div>
             <Container>
                 <Row>
-                    <Col md={4}>
-                    <Image className="image" src="/images/ultimaker.jpg" fluid></Image>
-                    </Col>
-                    <Col md={4}>
-                    <Image className="middleImg" src="/images/ultimaker.jpg" fluid></Image>
-                    </Col>
-                    <Col md={4}>
-                    <Image src="/images/ultimaker.jpg" fluid></Image>
-                    </Col>
-
-
+                <Col className=" mb-3 mt-0">
+                    <Carousel className="caresol p-0">
+                        <Carousel.Item >
+                            <img
+                                className="d-block w-100"
+                                src="/images/maker5.jpeg"
+                                alt="First slide"
+                             />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src="/images/maker7.jpeg"
+                                alt="Second slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src="/images/maker3.jpeg"
+                                alt="Third slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src="/images/maker8.jpeg"
+                                alt="First slide"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
+                </Col>
                 </Row>
             </Container>
         </>

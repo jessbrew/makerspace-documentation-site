@@ -20,7 +20,7 @@ export default function Home() {
                     <Carousel className="caresol p-0">
                         <Carousel.Item >
                             <img
-                                className="d-block w-100"
+                                className="d-block w-100 h-50"
                                 src="/images/maker1.jpeg"
                                 alt="First slide"
                              />
