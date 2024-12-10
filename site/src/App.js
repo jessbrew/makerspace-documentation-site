@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import { Link, BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link, BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Home from './pages/home';
 import Maintenance3D from "./pages/3dPrinting/maintenance";
 import Software3D from "./pages/3dPrinting/software";
@@ -17,7 +17,7 @@ export default function App() {
       <div id="root">
         <Navbar fixed="top" expand="lg" className="bg-body-tertiary" style={{ fontSize: '1.1em' }}>
           <Container>
-            <Navbar.Brand as={Link} to="/home" style={{ fontSize: '1.5em' }}>Makerspace Documentation</Navbar.Brand>
+            <Navbar.Brand as={Link} to="/home" style={{ fontSize: '1.3em' }}>Makerspace Documentation</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav>
@@ -43,6 +43,8 @@ export default function App() {
             <Route path="/lasergeneral" element={<LaserGeneral />} />
             <Route path="/lasermaintenance" element={<LaserMaintenance />} />
             <Route path="/lasersafety" element={<LaserSafety />} />
+            <Route path="/" element={<Navigate to="/home" replace />} />
+
           </Routes>
         </main>
         <Footer />

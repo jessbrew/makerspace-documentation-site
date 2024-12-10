@@ -16,9 +16,9 @@ export default function Home() {
 
         <Container>
             <Row className="p-2">
-                <Col className=" mb-3 mt-3">
+                <Col className=" mb-3 mt-0">
                     <Carousel className="caresol p-0">
-                        <Carousel.Item>
+                        <Carousel.Item >
                             <img
                                 className="d-block w-100"
                                 src="/images/maker1.jpeg"
@@ -80,7 +80,7 @@ export default function Home() {
                 </Col>
             </Row>
             <Row>
-                <Col md={4}>
+                <Col md={6}>
                     <Card className="card-hover mb-3">
                         <Card.Img variant="top" src="/images/ultimaker.jpg" />
                         <Card.Body>
@@ -96,7 +96,7 @@ export default function Home() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col md={4}>
+                {/* <Col md={4}>
                     <Card className="card-hover mb-3">
                         <Card.Img variant="top" src="/images/ultimaker.jpg" />
                         <Card.Body>
@@ -107,16 +107,17 @@ export default function Home() {
                             </div>
                         </Card.Body>
                     </Card>
-                </Col>
-                <Col md={4}>
+                </Col> */}
+                <Col md={6}>
                     <Card className="card-hover mb-3">
-                        <Card.Img variant="top" src="/images/ultimaker.jpg" />
+                        <Card.Img className="cardImg" variant="top" src="/images/lazerPic.png"/>
                         <Card.Body>
                             <Card.Title className="text-center" style={{fontSize: '1.5em'}}><b>Lazer Cutter</b></Card.Title>
                             <Card.Text></Card.Text>
                             <div className="accordion-content">
                                 <div>
-                                    <p className="mb-1"><b>Additional</b> details about the Lazer Cutters -- possibly link</p>
+                                    <p className="mb-1"><b>Here</b> in the Makerspace, we have a Universal Laser Systems cutter.</p>
+                                    <p className="mb-1"><b>Our</b> Universal Laser Systems cutter is a professional-grade tool, capable of precise cutting and etching on a variety of materials.</p>
                                     <div className="text-end">
                                         <Button as={Link} to="/lasergeneral" variant="secondary">More info</Button>
                                     </div>
