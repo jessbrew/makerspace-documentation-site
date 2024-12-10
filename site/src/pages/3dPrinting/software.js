@@ -20,12 +20,12 @@ export default function softwaresetup() {
                     <p>UltiMaker Cura is free, easy-to-use 3D printing software trusted by millions of users. Fine-tune your 3D model with 400+ settings for the best slicing and printing results.</p>
                     <p className="lead" style={{ textAlign: 'center'}}>Click To Download</p>
                     <Row className="mt-3 mb-3"> 
-                        <Col xs={6} style={{textAlign: 'center'}}> {/* Set each button to take half the width on small screens */}
+                        <Col xs={6} style={{textAlign: 'center'}}> 
                             <a href="https://github.com/Ultimaker/Cura/releases/download/5.8.1/UltiMaker-Cura-5.8.1-macos-X64.dmg">
                                 <Button className="button-style">Mac OS</Button> 
                             </a>
                         </Col>
-                        <Col xs={6} style={{textAlign: 'center'}}> {/* Set each button to take half the width on small screens */}
+                        <Col xs={6} style={{textAlign: 'center'}}> 
                             <a href="https://github.com/Ultimaker/Cura/releases/download/5.8.1/UltiMaker-Cura-5.8.1-win64-X64.exe">
                                 <Button className="button-style">Windows</Button> 
                             </a>
@@ -34,7 +34,6 @@ export default function softwaresetup() {
                 </Col>
             </Row>
         </Container>
-
 
         <Container>
             <Row>

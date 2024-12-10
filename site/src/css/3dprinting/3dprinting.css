@@ -24,18 +24,17 @@ image {
     transition: background-color 0.3s ease;
   }
 
-  
   .button-style:hover {
     background-color: #0056b3;
     transform: scale(1.1);
     transition: transform 0.3s ease;
   }
   
-
 .caresol {
-  border: 2px black;
-  border-style: solid;
+  border: 6px black;
+  border-style: solid;  
 }
+
   
 .accordion-content {
   max-height: 0;
@@ -54,14 +53,38 @@ image {
 }
 
 
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .cardImg {
+    margin-top: 90px;
+    margin-bottom: 22px;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
+  .cardImg {
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .cardImg {
+    margin-top: 150px;
+    margin-bottom: 62px;
+  }
+}
+
+
+
 @media (min-width: 768px) { 
   .mt-custom {
-    margin-top: 250px;
+    margin-top: 35px;
   }
 } 
-@media (min-width: 992px) { 
+@media (min-width: 1024px) { 
   .mt-custom {
-    margin-top: 250px;
+    margin-top: 125px;
   }
 } 
 
