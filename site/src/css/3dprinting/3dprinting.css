@@ -33,9 +33,17 @@ image {
 .caresol {
   border: 6px black;
   border-style: solid;  
+  width: 65%;
+  margin: 0 auto;
+}
+.caresol2 {
+  border: 6px black;
+  border-style: solid;  
+  width: 65%;
+  margin: 0 auto;
 }
 
-  
+
 .accordion-content {
   max-height: 0;
   opacity: 0;
@@ -94,3 +102,16 @@ image {
   }
   
 }
+
+@media (max-width: 768px) {
+  .caption {
+    display: none;
+  }
+  
+
+
+
+
+}
+
+
