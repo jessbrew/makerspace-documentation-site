@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Button, Carousel } from "react-bootstrap";
 import { Link, Routes, Route } from 'react-router-dom';
 import LaserGeneral from "../pages/LaserCutter/general";
 import Software3D from '../pages/3dPrinting/software';
+import '../css/main.css';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -24,7 +25,7 @@ export default function Home() {
                                 src="/images/maker1.jpeg"
                                 alt="First slide"
                              />
-                            <Carousel.Caption>
+                            <Carousel.Caption className="caption">
                                     <h3>Robotics Innovation</h3>
                                     <p>Discover the world of robotics with hands-on projects and advanced tools in the Makerspace.</p>
                             </Carousel.Caption>                                                          
@@ -35,7 +36,7 @@ export default function Home() {
                                 src="/images/maker2.jpeg"
                                 alt="Second slide"
                             />
-                            <Carousel.Caption>
+                            <Carousel.Caption className="caption">
                                 <h3>Precision Laser Cutting</h3>
                                 <p>Unlock creativity with our professional-grade laser cutters.</p>
                             </Carousel.Caption>
@@ -46,7 +47,7 @@ export default function Home() {
                                 src="/images/maker3.jpeg"
                                 alt="Third slide"
                             />
-                            <Carousel.Caption>
+                            <Carousel.Caption className="caption">
                                 <h3>Collaboration at its Best</h3>
                                 <p>The Makerspace is your hub for teamwork and innovation across disciplines.</p>
                             </Carousel.Caption>
@@ -57,7 +58,7 @@ export default function Home() {
                                 src="/images/maker4.jpeg"
                                 alt="First slide"
                             />
-                            <Carousel.Caption>
+                            <Carousel.Caption className="caption">
                                 <h3>Innovative 3D Printing</h3>
                                 <p>Explore the cutting-edge technology of 3D printing available in the Makerspace.</p>
                             </Carousel.Caption>

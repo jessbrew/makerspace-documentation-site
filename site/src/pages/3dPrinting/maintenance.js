@@ -87,7 +87,7 @@ export default function maintenance() {
             <Container>
                 <Row>
                 <Col className=" mb-3 mt-0">
-                    <Carousel className="caresol p-0">
+                    <Carousel className="caresol2 p-0 ">
                         <Carousel.Item >
                             <img
                                 className="d-block w-100"
